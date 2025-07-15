@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Focus Timer",
+  "version": "1.0.0",
+  "description": "Intuitive circular focus timer Chrome extension to help you stay concentrated on your work",
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "permissions": [
+    "storage",
+    "notifications",
+    "windows"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Focus Timer",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "32": "assets/icons/icon32.png",
+      "48": "assets/icons/icon48.png",
+      "128": "assets/icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["sounds/alarm.wav", "sounds/alarm.mp3", "assets/icons/icon48.png"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+} 
