@@ -41,7 +41,7 @@ class TimerState {
 }
 
 // Main Timer class for standalone window
-class StandaloneTimer {
+class MyStandaloneTimer {
     constructor() {
         this.state = new TimerState();
         this.elements = this.getElements();
@@ -94,7 +94,7 @@ class StandaloneTimer {
         this.applyTheme();
         
         // Set window title
-        document.title = 'Focus Timer - Standalone Window';
+        document.title = 'My Focus Timer - Standalone Window';
     }
 
     setupEventListeners() {
@@ -404,19 +404,19 @@ class StandaloneTimer {
         if (this.state.isRunning) {
             this.elements.statusText.textContent = 'Running';
             document.body.classList.add('timer-running');
-            document.title = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')} - Focus Timer`;
+            document.title = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')} - My Focus Timer`;
         } else if (this.state.isPaused) {
             this.elements.statusText.textContent = 'Paused';
             document.body.classList.remove('timer-running');
-            document.title = `Paused - Focus Timer`;
+            document.title = `Paused - My Focus Timer`;
         } else if (this.state.timeLeft === 0) {
             this.elements.statusText.textContent = 'Set timer';
             document.body.classList.remove('timer-running');
-            document.title = 'Focus Timer - Standalone Window';
+            document.title = 'My Focus Timer - Standalone Window';
         } else {
             this.elements.statusText.textContent = 'Ready';
             document.body.classList.remove('timer-running');
-            document.title = 'Focus Timer - Standalone Window';
+            document.title = 'My Focus Timer - Standalone Window';
         }
         
         // Update button states
@@ -508,5 +508,5 @@ class StandaloneTimer {
 
 // Initialize the standalone timer when the page loads
 document.addEventListener('DOMContentLoaded', () => {
-    window.standaloneTimer = new StandaloneTimer();
+    window.myStandaloneTimer = new MyStandaloneTimer();
 }); 

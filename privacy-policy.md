@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Focus Timer** ("this extension") does not collect, store, or transmit any personal data.
+**My Focus Timer** ("this extension") does not collect, store, or transmit any personal data.
 
 ## 1. Information Collection
 This extension does not collect any personally identifiable information such as name, email address, or IP address.

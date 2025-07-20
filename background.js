@@ -1,4 +1,4 @@
-// Background service worker for Focus Timer Extension
+// Background service worker for My Focus Timer Extension
 
 class BackgroundTimer {
     constructor() {
@@ -19,7 +19,7 @@ class BackgroundTimer {
     }
 
     async init() {
-        console.log('🚀 Focus Timer background service worker initializing...');
+        console.log('🚀 My Focus Timer background service worker initializing...');
         
         try {
             await this.loadSettings();
@@ -468,7 +468,7 @@ class BackgroundTimer {
 
 // 확장 프로그램 설치/업데이트
 chrome.runtime.onInstalled.addListener((details) => {
-    console.log('🚀 Focus Timer extension installed/updated:', details.reason);
+    console.log('🚀 My Focus Timer extension installed/updated:', details.reason);
     
     if (details.reason === 'install') {
         console.log('🎉 First time installation - setting up defaults');
@@ -484,7 +484,7 @@ chrome.runtime.onInstalled.addListener((details) => {
 
 // 확장 프로그램 시작
 chrome.runtime.onStartup.addListener(() => {
-    console.log('🌅 Focus Timer extension started');
+    console.log('🌅 My Focus Timer extension started');
 });
 
 // 백그라운드 타이머 인스턴스 생성

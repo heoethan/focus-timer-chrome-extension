@@ -41,7 +41,7 @@ class TimerState {
 }
 
 // Main Timer class
-class FocusTimer {
+class MyFocusTimer {
     constructor() {
         this.state = new TimerState();
         this.elements = this.getElements();
@@ -516,5 +516,5 @@ class FocusTimer {
 
 // Initialize the timer when the popup loads
 document.addEventListener('DOMContentLoaded', () => {
-    window.focusTimer = new FocusTimer();
+    window.myFocusTimer = new MyFocusTimer();
 }); 

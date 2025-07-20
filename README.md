@@ -1,4 +1,4 @@
-# Focus Timer Chrome Extension
+# My Focus Timer Chrome Extension
 
 An intuitive circular focus timer Chrome extension to help you stay concentrated on your work.
 
@@ -34,7 +34,7 @@ An intuitive circular focus timer Chrome extension to help you stay concentrated
 ## 📁 Project Structure
 
 ```
-focus-timer-extension/
+my-focus-timer-extension/
 ├── manifest.json       # Chrome Extension configuration
 ├── popup.html          # Main popup UI
 ├── popup.js           # Popup timer logic and UI controls
@@ -55,7 +55,7 @@ focus-timer-extension/
 1. Open Chrome browser and go to `chrome://extensions/`
 2. Enable **Developer mode** in the top right
 3. Click **Load unpacked**
-4. Select the `focus-timer-extension` folder
+4. Select the `my-focus-timer-extension` folder
 5. **Prepare alarm sound file**: Add a 2-second alarm sound file to `sounds/alarm.mp3`
 
 ### How to Use
@@ -124,7 +124,7 @@ focus-timer-extension/
 MIT License
 
 ## 👨‍💻 Developer
-Focus Timer Extension - An intuitive timer for work focus
+My Focus Timer Extension - An intuitive timer for work focus
 
 ---
 
